@@ -1,5 +1,7 @@
 # Test file to create pipeline
 
+name: CI
+
 on:
   push:
     branches: [master]
