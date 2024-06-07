@@ -1,0 +1,22 @@
+# This is basic workflow to get started with the actions
+
+name:  CI
+on:
+ push:
+   branches: [master]
+ pull_request:
+   branches: [master]
+jobs:
+  build:
+   # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # steps represnt a sequence of tasks that will be executed as part of job
+    steps:
+
+    # check out repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@2
+    - name: Run make command
+    - Run: make hello
+ 
+  
