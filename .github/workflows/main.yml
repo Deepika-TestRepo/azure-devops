@@ -17,6 +17,6 @@ jobs:
     # check out repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@2
     - name: Run make command
-    - Run: make hello
+      run: make hello
  
   
